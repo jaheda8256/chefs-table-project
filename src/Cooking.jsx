@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
-const Cooking = ({ wantToFood, handleRemoveCook }) => {
+const Cooking = ({ wantToFood, handleRemoveCook}) => {
+    console.log(wantToFood);
   const { name, preparing_time, calories } = wantToFood;
   return (
     <div>
@@ -21,7 +22,6 @@ const Cooking = ({ wantToFood, handleRemoveCook }) => {
         </table>
       </div> 
 
-
     </div>
   );
 };
@@ -34,5 +34,6 @@ Cooking.propTypes = {
   name: PropTypes.object,
   preparing_time: PropTypes.object,
   calories: PropTypes.object,
-  handlePreparing:PropTypes.func
+  handlePreparing:PropTypes.func,
+  handleRemoveCook:PropTypes.func
 }

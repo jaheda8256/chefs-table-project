@@ -25,6 +25,8 @@ function App() {
   
   };
 
+ 
+
   // const [currentCook, setCurrentCook] = useState([]);
   
 
@@ -56,13 +58,15 @@ function App() {
               card.map(pd => <Card key={card.id} 
                 card={pd}
                 handleWantToCook={handleWantToCook}
+                
               ></Card>)
             }
           </div>
 
 
           <div className="border-2 rounded-2xl lg:w-1/3">
-           <Food key={card.id} wantToFood={wantToFood}setWantToFood={setWantToFood}    >
+           <Food key={card.id} wantToFood={wantToFood}setWantToFood={setWantToFood}   
+            >
 
           </Food> 
           <ToastContainer />

@@ -1,23 +1,22 @@
 import PropTypes from 'prop-types'
  import Cooking from './Cooking';
 import { useState } from 'react';
+import FoodCook from './FoodCook';
 
 
-const Food = ({ wantToFood,setWantToFood }) => {
-
+const Food = ({ wantToFood, setWantToFood }) => {
+   
     const [current, setCurrent] = useState([]);
   
 
     const handleRemoveCook = (i) =>{
-        console.log(wantToFood);
-       setCurrent([...current, i])
-        const removeCook = wantToFood.filter((item) => item.id !== i.id);
-        setWantToFood(removeCook);
-        console.log(removeCook, i);
-       
-    }
-    
-
+        
+        setCurrent([...current, i])
+         const removeCook = wantToFood.filter((item) => item.id !== i.id);
+         setWantToFood(removeCook);
+         
+        
+     }
 
     return (
         <div>
@@ -44,7 +43,7 @@ const Food = ({ wantToFood,setWantToFood }) => {
 
           
 
-       <h3 className='text-center text-2xl font-bold mt-6'>Currently Cooking: </h3>
+       <h3 className='text-center text-2xl font-bold mt-6'>Currently Cooking:{current.length} </h3>
            <hr className='mt-2'/>
             <div className='flex justify-around text-lg font-medium'>
 
@@ -54,12 +53,17 @@ const Food = ({ wantToFood,setWantToFood }) => {
           <p>Calories</p>
           <p></p>
           
-          
-         </div>       
+         </div> 
+
+{
+    current.map((removeCook) =><FoodCook key={removeCook.id}
+    wantToFood={wantToFood}
+    removeCook={removeCook}
+    ></FoodCook>)
+}
+         
         </div>
-
-
-        
+   
     );
 };
 
@@ -67,5 +71,6 @@ export default Food;
 
 Food.propTypes = {
     wantToFood: PropTypes.array,
-    handleRemoveCook:PropTypes.func
+    handleRemoveCook:PropTypes.func,
+    setWantToFood:PropTypes.func
 }
