@@ -47,12 +47,12 @@ function App() {
       <Header></Header>
 
       <div className='container mx-auto'>
-        <div className='mt-8'>
-          <h3 className='text-3xl mt-8 text-center font-bold'>Our Recipes</h3>
+        <div className='mt-24'>
+          <h3 className='text-3xl mb-4 mt-8 text-center font-bold'>Our Recipes</h3>
           <p className='font-normal text-center'>From beginners to seasoned cooks, our classes cater to all skill levels. Join us for an unforgettable culinary experience. Embark on a flavorful journey <br /> and master the art of cooking with our interactive and engaging classes</p>
         </div>
 
-        <div className='lg:flex justify-between mt-8'>
+        <div className='lg:flex justify-between mt-24'>
           <div className='w-2/3 gap-4 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 '>
             {
               card.map(pd => <Card key={card.id} 
@@ -69,17 +69,10 @@ function App() {
           </Food> 
           <ToastContainer />
 
-       
-
-
-
-
           </div>
         </div>
 
       </div>
-
-
     </>
   )
 }

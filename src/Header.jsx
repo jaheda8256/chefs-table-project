@@ -13,7 +13,7 @@ const Header = () => {
 
 
                     </div>
-                    <h3 className="font-bold text-xl">Recipe Calories</h3>
+                    <h3 className="font-bold text-3xl">Recipe Calories</h3>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu font-medium menu-horizontal px-1">
@@ -24,24 +24,21 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end space-x-2">
-                    <a className="btn rounded-3xl"> <span>
+                    <a className="btn rounded-3xl px-16"> <span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
 
                     </span>Search</a>
                     
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 bg-green-500 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 bg-green-500 rounded-full">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                     </svg>
-
-
-
 
                 </div>
             </div>
 
-            <div className="hero lg:h-[400px] rounded-2xl" style={{ backgroundImage:` url(${cooking}) `}}>
+            <div className="hero lg:h-[700px] rounded-2xl mt-20" style={{ backgroundImage:` url(${cooking}) `}}>
                 <div className="hero-overlay rounded-2xl bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="">
