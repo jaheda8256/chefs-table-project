@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-const Cooking = ({ wantToCook }) => {
-  const { name, preparing_time, calories } = wantToCook;
+const Cooking = ({ wantToFood, handleRemoveCook }) => {
+  const { name, preparing_time, calories } = wantToFood;
   return (
     <div>
        <div className="">
@@ -15,7 +15,7 @@ const Cooking = ({ wantToCook }) => {
               <td>{calories}</td>
             </tr>
           
-            <button  className='btn bg-green-500 my-auto flex justify-end'>Preparing</button>
+            <button onClick={()=> handleRemoveCook(wantToFood)} className='btn bg-green-500 my-auto flex justify-end'>Preparing</button>
           </div>
 
         </table>
@@ -30,7 +30,7 @@ export default Cooking;
 
 Cooking.propTypes = {
 
-  wantToCook: PropTypes.object,
+  wantToFood: PropTypes.object,
   name: PropTypes.object,
   preparing_time: PropTypes.object,
   calories: PropTypes.object,
