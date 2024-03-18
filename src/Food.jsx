@@ -24,7 +24,8 @@ const Food = ({ wantToFood, setWantToFood }) => {
             <hr className='mt-2'/>
             <div className='flex justify-around text-lg font-medium'>
 
-           <p></p>  
+           <p></p> 
+       
           <p>Name</p>
           <p>Time</p>
           <p>Calories</p>
@@ -34,8 +35,9 @@ const Food = ({ wantToFood, setWantToFood }) => {
          <hr />
 
            {
-            wantToFood.map((wantToFood)  => <Cooking
+            wantToFood.map((wantToFood,index)  => <Cooking
                 key={wantToFood.id}
+                index={index+1}
                  wantToFood={wantToFood}
                  handleRemoveCook={handleRemoveCook}
                 ></Cooking>)
@@ -47,7 +49,7 @@ const Food = ({ wantToFood, setWantToFood }) => {
            <hr className='mt-2'/>
             <div className='flex justify-around text-lg font-medium'>
 
-           <p></p>    
+           <p></p>   
           <p>Name</p>
           <p>Time</p>
           <p>Calories</p>
@@ -56,8 +58,10 @@ const Food = ({ wantToFood, setWantToFood }) => {
          </div> 
 
 {
-    current.map((removeCook) =><FoodCook key={removeCook.id}
+    current.map((removeCook,index) =><FoodCook key={removeCook.id}
+    
     wantToFood={wantToFood}
+    index={index+1}
     removeCook={removeCook}
     ></FoodCook>)
 }

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-const Cooking = ({ wantToFood, handleRemoveCook}) => {
+const Cooking = ({ wantToFood, handleRemoveCook, index}) => {
     console.log(wantToFood);
   const { name, preparing_time, calories } = wantToFood;
   return (
@@ -11,12 +11,13 @@ const Cooking = ({ wantToFood, handleRemoveCook}) => {
 
             <tr >
               <td></td> 
+              <td>{index}</td>
               <td>{name}</td>
               <td>{preparing_time}</td>
               <td>{calories}</td>
             </tr>
           
-            <button onClick={()=> handleRemoveCook(wantToFood)} className='btn bg-green-500 my-auto flex justify-end'>Preparing</button>
+            <button onClick={()=> handleRemoveCook(wantToFood)} className='btn bg-green-500 my-auto flex justify-end rounded-2xl'>Preparing</button>
           </div>
 
         </table>

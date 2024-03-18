@@ -1,5 +1,5 @@
-
-const FoodCook = ({ removeCook }) =>
+import PropType from 'prop-types'
+const FoodCook = ({ removeCook ,index}) =>
 
  {
     const { name, preparing_time, calories } = removeCook;
@@ -12,6 +12,7 @@ const FoodCook = ({ removeCook }) =>
 
             <tr >
               <td></td> 
+              <td>{index}</td>
               <td>{name}</td>
               <td>{preparing_time}</td>
               <td>{calories}</td>
@@ -31,7 +32,8 @@ const FoodCook = ({ removeCook }) =>
 export default FoodCook;
 
 FoodCook.propTypes ={
- 
+
+removeCook: PropType.object,
     
 
 }

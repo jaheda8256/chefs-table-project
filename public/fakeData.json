@@ -18,11 +18,12 @@
         "Fresh cilantro for garnish"
       ],
       "ingredients_length": 11,
-      "preparing_time": "40 minutes",
+      "preparing_time": "50 minutes",
       "calories": "350 calories "
     },
     {
       "id" : 2,
+     
       "img": "https://i.ibb.co/2Pyyw0M/img-2.png",
       "name": "Mushroom Risotto (Asian)",
       "description": "Creamy and flavorful risotto packed with mushrooms.",
@@ -40,7 +41,7 @@
       ],
       "ingredients_length": 10,
       "preparing_time": "35 minutes",
-      "calories": "500 calories "
+      "calories": "400 calories "
     },
     {
       "id" : 3,
@@ -60,8 +61,8 @@
         "Salt and pepper to taste"
       ],
       "ingredients_length": 10,
-      "preparing_time": "40 minutes",
-      "calories": "200 calories "
+      "preparing_time": "70 minutes",
+      "calories": "500 calories "
     },
     {
       "id" : 4,
@@ -69,7 +70,7 @@
       "name": "Chicken Fry (Asian Style)",
       "description": "A tasty chicken fry with crisp veggies and tangy feta cheese.",
       "ingredients": [
-       
+        
         "1 bell pepper, diced",
         "200g feta cheese, crumbled",
         "1/4 cup Kalamata olives",
@@ -81,8 +82,8 @@
 
       ],
       "ingredients_length": 10,
-      "preparing_time": "10 minutes",
-      "calories": "300 calories "
+      "preparing_time": "40 minutes",
+      "calories": "400 calories "
     },
     {
       "id" : 5,
@@ -91,8 +92,8 @@
       "description": "A refreshing sandwich with crisp veggies and tangy feta cheese.",
       "ingredients": [
        
-        "1 red onion, thinly sliced",
-        "1 bell pepper, diced",
+        "200g feta cheese, crumbled",
+        "50 g dried cranberries",
         "200g feta cheese, crumbled",
         "1/4 cup Kalamata olives",
         "2 tbsp olive oil",
@@ -101,8 +102,8 @@
         "Salt and pepper to taste"
       ],
      
-      "preparing_time": "40 minutes",
-      "calories": "700 calories "
+      "preparing_time": "60 minutes",
+      "calories": "900 calories "
     },
     {
       "id" : 6,
@@ -124,7 +125,7 @@
 
       ],
      
-      "preparing_time": "30 minutes",
+      "preparing_time": "80 minutes",
       "calories": "600 calories "
     }
 
